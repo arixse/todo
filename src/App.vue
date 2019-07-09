@@ -4,9 +4,7 @@
         <v-flex xs5 offset-xs3>
             <to-do-form></to-do-form>
         </v-flex>
-        <v-container>
-            <to-do-list />
-        </v-container>
+        <to-do-list />
     </v-app>
 </template>
 
