@@ -1,38 +1,35 @@
 <template>
-  <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-toolbar>
-
-    <v-content>
-      <HelloWorld/>
-    </v-content>
-  </v-app>
+    <v-app>
+        <h3 class="display-4 font-weight-light main-title">ToDoList</h3>
+        <v-flex xs5 offset-xs3>
+            <to-do-form></to-do-form>
+        </v-flex>
+        <v-container>
+            <to-do-list />
+        </v-container>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
+import ToDoList from "./components/ToDoList"
+import ToDoForm from "./components/ToDoForm"
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  },
-  data () {
-    return {
-      //
+    name: "App",
+    components: {
+        ToDoList,
+        ToDoForm
+    },
+    data() {
+        return {
+            //
+        }
     }
-  }
 }
 </script>
+<style lang="stylus">
+.main-title {
+    text-align: center;
+    padding: 40px 0;
+}
+</style>
+
