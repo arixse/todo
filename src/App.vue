@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <h3 class="display-4 font-weight-light main-title">ToDoList</h3>
+        <h3 class="display-2 font-weight-light main-title">ToDoList</h3>
         <v-flex xs5 offset-xs3>
             <to-do-form></to-do-form>
         </v-flex>
@@ -13,6 +13,8 @@
 <script>
 import ToDoList from "./components/ToDoList"
 import ToDoForm from "./components/ToDoForm"
+import Vue from "vue"
+Vue.prototype.$_bus = new Vue()//create a event bus
 export default {
     name: "App",
     components: {
