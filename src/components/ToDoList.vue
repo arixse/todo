@@ -5,6 +5,7 @@
             <v-radio label="done" value="done"></v-radio>
             <v-radio label="undo" value="undo"></v-radio>
         </v-radio-group>
+        <div class="todo-list-container">
         <v-layout row>
             <v-flex>
                 <v-list subheader three-line>
@@ -28,6 +29,7 @@
                 </v-list>
             </v-flex>
         </v-layout>
+        </div>
     </v-container>
 </template>
 
@@ -65,5 +67,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
+.todo-list-container 
+    height:200px
+    overflow-x hidden
+    overflow-y auto 
 </style>
+
